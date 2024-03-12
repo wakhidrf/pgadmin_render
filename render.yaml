@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: pgAdmin
+    runtime: docker
+    plan: free
+    envVars:
+      - key: PGADMIN_LISTEN_ADDRESS
+        value: 0.0.0.0
+      - key: PGADMIN_DISABLE_POSTFIX
+        value: true
+      - key: PGADMIN_DEFAULT_EMAIL
+        sync: false
+      - key: PGADMIN_DEFAULT_PASSWORD
+        sync: false
