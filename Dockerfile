@@ -1,4 +1,4 @@
-FROM dpage/pgadmin4:9.8
+FROM dpage/pgadmin4:latest
 USER root
 RUN find /usr/ -name "python3*"
 RUN setcap -r /usr/bin/python3.12
