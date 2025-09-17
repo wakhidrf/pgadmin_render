@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: pgAdmin
+    name: wakhidrf.pgAdmin
     runtime: docker
     plan: free
     envVars:
